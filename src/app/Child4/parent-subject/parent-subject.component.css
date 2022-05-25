@@ -1,0 +1,26 @@
+.container-outer{
+    border:2px solid black;
+    display: grid;
+    padding: 10px;
+    gap:10px;
+    grid-template-areas:
+    'sibling1 sibling1 sibling2 sibling2 sibling2 '
+    'sibling3 sibling3 sibling3 sibling4 sibling4 '
+}
+.sibling1{
+    border:1px solid black;   
+    grid-area:sibling1;
+}
+.sibling2{
+    border:1px solid black;
+    grid-area:sibling2;
+}
+.sibling3{
+    grid-area:sibling3;
+   
+}
+.sibling4{
+    grid-area:sibling4;
+    
+
+}

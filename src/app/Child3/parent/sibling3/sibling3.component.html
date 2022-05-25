@@ -1,0 +1,4 @@
+<div  *ngFor="let time of state.timelogs">
+  <div *ngIf="time.start">Started at {{ time.time | date: "medium" }}</div>
+  <div *ngIf="!time.start">Paused at {{ time.time | date: "medium" }}</div>
+</div>

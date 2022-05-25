@@ -1,0 +1,20 @@
+<div class="timeinput">
+    <form [formGroup]="timerform">
+        <div class="timeinput__form">
+            <label for="time">Enter Time Limit      </label>
+            <input id="time"  type="number" formControlName="timer">
+        </div>
+
+        <div class="timeinput__button">
+        <button class="startbutton" type="button" [disabled]="timerform.invalid" (click)="startpausehandler()">Start/Pause</button>
+        <button class="resetbutton" (click)="resethandler()">Reset</button>
+    </div>
+</form>
+</div>
+<div class="timeinput__counter">
+<div *ngFor="let timelog of timelogs ">
+    <div *ngIf="!timelog.start" >
+        Paused at {{timelog.countdown}}
+    </div>
+   </div>
+</div>

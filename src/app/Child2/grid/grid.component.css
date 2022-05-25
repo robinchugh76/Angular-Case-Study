@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.flex-container > div {
+    margin-bottom: 5px;
+  
+  }
+.grid-list{
+   text-align: end;
+}
+
+.grid {
+    border: 1px solid black;
+    height: 100px;
+    width: 24%;
+    
+}
+
+.list {
+    border: 1px solid black;
+    height: 100px;
+    width: 49%;
+}

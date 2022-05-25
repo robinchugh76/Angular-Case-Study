@@ -1,0 +1,47 @@
+/* .form-group{
+    margin: 20px -50px 0 50px;
+}
+
+.startbutton{
+    margin: 10px -165px 0 165px;
+}
+
+.resetbutton{
+    margin: 10px -180px 0 180px;
+}
+
+.pausecount{
+    padding: 0 0 0 20px;
+} */
+
+.timeinput {
+  position: relative;
+  left: 90px;
+  top: 20px;
+}
+
+.timeinput__button {
+  position: absolute;
+  left: 115px;
+  top: 30px;
+}
+
+.timeinput__counter {
+  margin-top: 80px;
+  margin-left: 90px;
+}
+
+@media screen and (max-width: 450px) {
+  .timeinput {
+    position: relative;
+    left: 10px;
+    top: 20px;
+    text-align: left;
+  }
+
+  .timeinput__button {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+  }
+}

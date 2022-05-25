@@ -1,0 +1,28 @@
+<header>
+  <h1 [hidden]="true">Component 5</h1>
+</header>
+
+<main>
+  <div class="center">
+    <table class="dynamic-table">
+      <thead>
+        <tr>
+          <ng-container *ngFor="let key of tableKeys">
+            <th (click)="sorttable(key)">{{ key }}</th>
+          </ng-container>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let data of initialData">
+          <td>{{ data.Name }}</td>
+          <td>{{ data.Class }}</td>
+          <td>{{ data.Section }}</td>
+          <td>{{ data.Subject1 }}</td>
+          <td>{{ data.Subject2 }}</td>
+          <td>{{ data.Subject3 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
