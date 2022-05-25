@@ -24,12 +24,9 @@ export class DynamicDataComponent implements OnInit {
 
   sorttable(data: any) {
     if (this.sortCount[data]) {
-      console.log('dsds');
-
       switch (this.sortCount[data] % 3) {
         case 1:
           this.sortCount[data] += 1;
-          console.log('coming here');
 
           this.initialData = this.initialData.sort((a: any, b: any) =>
             a[data] > b[data] ? -1 : 1
@@ -37,17 +34,13 @@ export class DynamicDataComponent implements OnInit {
           break;
 
         case 2:
-          console.log('coming here 2');
           this.sortCount[data] += 1;
-          console.log(this.initialList);
 
           this.initialData = JSON.parse(JSON.stringify(this.initialList));
-          console.log(this.initialData);
 
           break;
 
         case 0:
-          console.log('coming here 3');
           this.sortCount[data] += 1;
           this.initialData = this.initialData.sort((a: any, b: any) =>
             a[data] > b[data] ? 1 : -1
@@ -60,7 +53,6 @@ export class DynamicDataComponent implements OnInit {
       this.initialData = this.initialData.sort((a: any, b: any) =>
         a[data] > b[data] ? 1 : -1
       );
-      console.log(this.sortCount);
     }
   }
 }

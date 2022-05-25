@@ -15,7 +15,6 @@ export class DynamicDivComponent implements OnInit {
   }
 
   loadMore() {
-    console.log("load more...")
     for (let i = 0; i < 4; i++) {
       this.arr.push(this.arr.length + 1)
     }

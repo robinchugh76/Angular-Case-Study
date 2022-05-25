@@ -22,5 +22,17 @@
 .sibling4{
     grid-area:sibling4;
     
+}
 
+@media screen and (max-width:680px)  {
+    .container-outer{
+        border:2px solid black;
+        display: grid;
+        padding: 10px;
+        grid-template-areas:
+        'sibling1'
+        'sibling2'
+        'sibling3'
+        'sibling4'
+    }
 }

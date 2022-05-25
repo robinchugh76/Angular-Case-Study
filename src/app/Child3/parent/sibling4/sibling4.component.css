@@ -7,23 +7,3 @@
 .grid-item {
   text-align: left;
 }
-
-/* @media screen and (max-width: 680px) {
-  .showcount {
-    text-align: center;
-  }
-
-  .showtext {
-    text-align: center;
-  }
-} */
-
-/* @media screen and (max-width: 450px) {
-  .showcount {
-    margin-left: 150px;
-  }
-
-  .showtext {
-    margin-left: 150px;
-  }
-} */
